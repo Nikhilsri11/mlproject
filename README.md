@@ -1,4 +1,4 @@
-## End-to-end ML project (Streamlit UI)
+## Student Score predictor end-to-end ML project (Streamlit UI)
 
 This project trains a regression model to predict **student math score** and serves predictions via a **Streamlit** app.
 
