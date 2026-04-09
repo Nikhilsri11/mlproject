@@ -2,10 +2,13 @@ pandas
 numpy
 seaborn
 matplotlib
-scikit-learn
+# Pin scikit-learn: pickled preprocessor/model must load with the SAME version
+# that was used when training (avoids SimpleImputer _fill_dtype / pickle errors on Streamlit Cloud).
+scikit-learn==1.8.0
 catboost
 xgboost
 Flask
 dill
+streamlit
 
 #-e .

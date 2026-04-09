@@ -45,6 +45,7 @@ Notes:
   - **Train locally and commit the `artifacts/` folder**, or
   - Add a small “train” step in the app/startup (not recommended for heavy training), or
   - Use GitHub Actions to train and upload artifacts (more advanced).
+- **Scikit-learn version must match training**: `preprocessor.pkl` and `model.pkl` are pickled with the sklearn version from `requirements.txt`. If you see errors like `SimpleImputer` / `_fill_dtype` on Streamlit, pin `scikit-learn` (already pinned), push, **redeploy**, and if needed **re-run training** with that pinned version and commit fresh `artifacts/`.
 
 #### Option B: Docker
 
